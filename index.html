@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pâtisserie Sucre Rose – Douala</title>
+<meta name="description" content="Gâteaux d'anniversaire, mariages et petites douceurs à Douala. Commandez sur WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --framboise:#B3294E;
+  --rose:#FFE3EA;
+  --pistache:#BFDCB8;
+  --cacao:#35201F;
+  --blanc:#FFFAFB;
+  --serif:'DM Serif Display',Georgia,serif;
+  --sans:'DM Sans',system-ui,-apple-system,Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--cacao);background:var(--blanc);line-height:1.6;font-size:17px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--cacao);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+
+/* En-tête */
+.hero{background:var(--framboise);color:var(--blanc);padding:56px 0 90px;position:relative}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:28px;
+  background:radial-gradient(circle at 14px 0,transparent 14px,var(--blanc) 15px) 0 0/28px 28px repeat-x}
+.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(2.6rem,9vw,5rem);line-height:1.05;max-width:11ch}
+.hero p{margin-top:18px;max-width:34ch;font-size:1.15rem}
+.btn{display:inline-block;margin-top:28px;padding:14px 26px;border-radius:999px;background:var(--pistache);
+  color:var(--cacao);font-weight:700;text-decoration:none}
+.btn:hover{background:var(--blanc)}
+
+/* Sections */
+section{padding:56px 0}
+h2{font-family:var(--serif);font-weight:400;font-size:clamp(1.9rem,6vw,2.6rem);margin-bottom:8px}
+.intro{max-width:52ch;margin-bottom:28px}
+
+/* Produits */
+.produits{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.produit{border-radius:22px;padding:22px}
+.produit:nth-child(1){background:var(--rose)}
+.produit:nth-child(2){background:var(--pistache);border-radius:22px 22px 80px 22px}
+.produit:nth-child(3){background:var(--cacao);color:var(--blanc);border-radius:80px 22px 22px 22px}
+.produit:nth-child(4){background:var(--rose);border-radius:22px 80px 22px 22px}
+.produit .icone{font-size:2.6rem;line-height:1}
+.produit h3{font-family:var(--serif);font-weight:400;font-size:1.4rem;margin:10px 0 4px}
+.produit .prix{font-weight:700;margin-top:10px}
+
+/* Commande */
+.commande{background:var(--rose)}
+.etapes{display:grid;gap:14px;margin:20px 0 8px;padding:0;list-style:none;counter-reset:e}
+.etapes li{counter-increment:e;padding-left:46px;position:relative}
+.etapes li::before{content:counter(e);position:absolute;left:0;top:0;width:32px;height:32px;border-radius:50%;
+  background:var(--framboise);color:var(--blanc);display:grid;place-items:center;font-weight:700}
+.btn-wa{background:var(--framboise);color:var(--blanc)}
+.btn-wa:hover{background:var(--cacao)}
+
+/* Infos */
+.infos{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.infos h3{font-family:var(--serif);font-weight:400;font-size:1.3rem;margin-bottom:6px}
+
+footer{background:var(--cacao);color:var(--blanc);padding:28px 0;font-size:.95rem}
+
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>Sucre Rose</h1>
+    <p>Gâteaux d'anniversaire, de mariage et petites douceurs, faits à la commande à Douala.</p>
+    <!-- À CHANGER : remplace 237600000000 par le numéro WhatsApp (237 + 9 chiffres) -->
+    <a class="btn" href="https://wa.me/237686839978?text=Bonjour%2C%20je%20voudrais%20commander%20un%20g%C3%A2teau." target="_blank" rel="noopener">Commander sur WhatsApp</a>
+  </div>
+</header>
+
+<main>
+  <section id="gateaux">
+    <div class="wrap">
+      <h2>Nos gâteaux</h2>
+      <p class="intro">Tout est préparé frais, quelques jours avant votre fête. Les prix ci-dessous sont des exemples.</p>
+      <!-- À CHANGER : remplace les emojis par de vraies photos avec <img src="photo.jpg" alt="description"> -->
+      <div class="produits">
+        <article class="produit">
+          <div class="icone" aria-hidden="true"><img src="OIP.webp" alt="Gâteau d'anniversaire"></div>
+          <h3>Gâteau d'anniversaire</h3>
+          <p>Vanille, chocolat ou fruits, décoré selon votre thème.</p>
+          <p class="prix">À partir de 15 000 FCFA</p>
+        </article>
+        <article class="produit">
+          <div class="icone" aria-hidden="true"><img src="OIP (3).webp" alt="Cupcakes"></div>
+          <h3>Cupcakes</h3>
+          <p>Par boîte de 6 ou de 12, parfaits pour les fêtes d'enfants.</p>
+          <p class="prix">À partir de 4 000 FCFA</p>
+        </article>
+        <article class="produit">
+          <div class="icone" aria-hidden="true"><img src="OIP (1).webp" alt="Gâteau de mariage"></div>
+          <h3>Gâteau de mariage</h3>
+          <p>Plusieurs étages, sur devis. Dégustation possible.</p>
+          <p class="prix">Sur devis</p>
+        </article>
+        <article class="produit">
+          <div class="icone" aria-hidden="true"><img src="OIP (2).webp" alt="Viennoiseries"></div>
+          <h3>Viennoiseries</h3>
+          <p>Croissants, pains au chocolat et beignets pour vos matins.</p>
+          <p class="prix">À partir de 500 FCFA</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="commande" class="commande">
+    <div class="wrap">
+      <h2>Comment commander</h2>
+      <ol class="etapes">
+        <li>Écrivez-nous sur WhatsApp avec la date, le nombre de personnes et vos idées.</li>
+        <li>Nous vous envoyons le prix et une photo d'exemple.</li>
+        <li>Vous versez une avance par Mobile Money pour confirmer la commande.</li>
+        <li>Vous récupérez votre gâteau, ou nous le livrons dans Douala.</li>
+      </ol>
+      <a class="btn btn-wa" href="https://wa.me/237686839978?text=Bonjour%2C%20je%20voudrais%20commander%20un%20g%C3%A2teau." target="_blank" rel="noopener">Écrire sur WhatsApp</a>
+    </div>
+  </section>
+
+  <section id="infos">
+    <div class="wrap infos">
+      <div>
+        <h3>Où nous trouver ?</h3>
+        <p>Akwa, Douala<br>Livraison dans Douala selon le quartier</p>
+      </div>
+      <div>
+        <h3>Horaires</h3>
+        <p>Lundi au samedi : 8 h à 18 h<br>Dimanche : sur commande</p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>WhatsApp : +237 6 86 83 99 78</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Sucre Rose, Douala. Site exemple réalisé par Fernande, développeuse web.</p>
+  </div>
+</footer>
+
+</body>
+</html>
