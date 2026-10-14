@@ -2,7 +2,7 @@
 
 Site exemple d'une pâtisserie fictive à Douala, réalisé pour montrer ce que je peux créer pour un commerce.
 
-## Ce que contient le site
+## Ce que contient le site :
 
 - Une page d'accueil claire avec un bouton de commande WhatsApp
 - La présentation des produits avec leurs prix en FCFA
